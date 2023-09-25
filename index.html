@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>telegram web app js</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <title>my javascript codes</title>
+    <script src="myfunctions.js"></script>
+
+
+    <title>Using CSS Variable</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <button onclick="comandxxxxxxxxxx;">buttonxxxxxxxxxxxxxx</button>
+
+    <h1>API</h1>
+    <h2>initializing-mini-apps</h2>
+        <button onclick="Telegram.WebApp.openTelegramLink('https://t.me/yemenapp');">openTelegramLink</button>
+        <button onclick="Telegram.WebApp.openLink('https://github.com');">openLink</button>
+        <button onclick="Telegram.WebApp.showPopup({title: 'test title', message: 'test message'});">showPopup</button>
+    <h2>webview</h2>
+        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
+    <h2>MainButton</h2>
+        <button onclick="Telegram.WebApp.MainButton.show();">show()</button>
+        <button onclick="Telegram.WebApp.MainButton.hide();">hide()</button>
+    <h2>BackButton</h2>
+        <button onclick="Telegram.WebApp.BackButton.show();">show()</button>
+        <button onclick="Telegram.WebApp.BackButton.hide();">hide()</button>
+    <h2>ScanQr</h2>
+        <button onclick="Telegram.WebApp.showScanQrPopup([]);">showScanQrPopup</button>
+        <button onclick="Telegram.WebApp.closeScanQrPopup();">closeScanQrPopup</button>
+
+    <h2>color</h2>
+    <button onclick="Telegram.WebApp.headerColor = '#121212';">headerColor</button>
+    <button onclick="Telegram.WebApp.setHeaderColor('#BBF07B');">setHeaderColor</button>
+    <button onclick="Telegram.WebApp.setBackgroundColor('#7BD2F0');">setBackgroundColor</button>
+
+    <div style="background-color: var(--tg-theme-bg-color);">
+        This div uses the CSS variable for its background color.
+    </div>
+
+    <h2>myfunctions.js</h2>
+        <button onclick="Telegram.WebApp.headerColor = getRandomColor();">getRandomColor</button>
+    <h2>variables.js</h2>
+        <p>-- headerColor: <span id="headerColor">[replace_me]</span> --</p>
+        <p>-- version: <span id="version">[replace_me]</span> --</p>
+        <p>-- colorScheme: <span id="colorScheme">[replace_me]</span> --</p>
+        <script src="variables.js"></script>
+
+</body>
+</html>
