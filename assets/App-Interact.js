@@ -5,6 +5,12 @@ const AppInteract = {
     testLog() {
         console.log(" log in js");
     },
+    sendDataToBot(data)
+    {
+        console.log("in sendData ",data);
+        Telegram.WebApp.sendData(data);
+    }
+    ,
     requestLocation(el) {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -91,3 +97,9 @@ function myfunction(params1, params2) {
     console.log('param1', params1);
     console.log('param2', params2);
 }
+function processClient() {
+    console.log("on js processClient ");
+     const clientObj=document.getElementById("hiddenObjectData").value;
+   // Your JavaScript logic here to process the 'clientObj'
+   AppInteract.sendDataToBot(clientObj);
+ }
