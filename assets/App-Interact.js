@@ -3,7 +3,9 @@ const AppInteract = {
     initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
     MainButton: Telegram.WebApp.MainButton,
     testLog() {
-        console.log(" log in js");
+        console.log(" log in js initData",AppInteract.initData);
+        console.log(" log in js initDataUnsafe",AppInteract.initDataUnsafe);
+
     },
     sendDataToBot(data)
     {
@@ -101,5 +103,6 @@ function processClient() {
     console.log("on js processClient ");
      const clientObj=document.getElementById("hiddenObjectData").value;
    // Your JavaScript logic here to process the 'clientObj'
+   AppInteract.testLog();
    AppInteract.sendDataToBot(clientObj);
  }

@@ -1,0 +1,22 @@
+{
+
+    "Continue shopping":"مواصلة التسوق",
+    "Add to cart":"إضافة للسلة",
+    "Cart Details":"السلة",
+    "Name":"الإسم",
+"Quantity":"الكمية",
+"Price":"السعر",
+"Total Price":"إجمالي السعر",
+"Payement":"واجهة الدفع",
+"Payment Details":"تفاصيل عملية الدفع",
+"Payemnt Method":"طريقة الدفع",
+"Cash":"كاش",
+"Mobile Money":"موبايل موني",
+"Wallet C":"محفظة 2",
+"Credit Card":"بطاقة إئتمان",
+"Shipping Method":"طريقة التوصيل",
+"From Store":"من المتجر",
+"Dilivery Service":"عبر خدمات التوصيل",
+"Submit":"إرسال البيانات",
+"Cancel":"إلغاء"
+}
