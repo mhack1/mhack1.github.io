@@ -41,9 +41,13 @@ const buttonParams = {
 };
 
 pluginInstance.MainButton.setParams(buttonParams);
-
-pluginInstance.on('mainButton:click', () => {
-    // Code to execute when the main button is clicked
+Telegram.WebApp.onEvent('mainButtonClicked', function(){
     console.log('Main button clicked!');
-});
+    // tg.sendData("some string that we need to send"); 
+    //при клике на основную кнопку отправляем данные в строковом виде
+ });
+// pluginInstance.on('mainButton:click', () => {
+//     // Code to execute when the main button is clicked
+//     console.log('Main button clicked!');
+// });
   
