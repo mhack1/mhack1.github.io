@@ -2,6 +2,9 @@ const AppInteract = {
     initData: Telegram.WebApp.initData || '',
     initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
     MainButton: Telegram.WebApp.MainButton,
+    
+
+   
     testLog() {
         console.log(" log in js initData",AppInteract.initData);
         console.log(" log in js initDataUnsafe",AppInteract.initDataUnsafe);
@@ -95,6 +98,8 @@ const AppInteract = {
         });
     }
 }
+
+ 
 function myfunction(params1, params2) {
     console.log('param1', params1);
     console.log('param2', params2);
@@ -106,3 +111,4 @@ function processClient() {
    AppInteract.testLog();
    AppInteract.sendDataToBot(clientObj);
  }
+  
