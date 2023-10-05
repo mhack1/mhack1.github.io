@@ -43,6 +43,7 @@ const buttonParams = {
 pluginInstance.MainButton.setParams(buttonParams);
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
     console.log('Main button clicked!');
+    goToPayement();
     // tg.sendData("some string that we need to send"); 
     //при клике на основную кнопку отправляем данные в строковом виде
  });
